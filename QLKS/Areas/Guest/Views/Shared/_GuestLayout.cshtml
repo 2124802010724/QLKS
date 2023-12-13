@@ -1,0 +1,8 @@
+﻿
+@if (!Request.IsAuthenticated)
+{
+    ViewBag.Title = "_GuestLayout";
+    Response.Redirect("~/Guest/GuestLogin");
+}
+
+<h2>_GuestLayout</h2>
